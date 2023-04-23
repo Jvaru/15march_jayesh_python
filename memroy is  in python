@@ -1,0 +1,8 @@
+memory is managed dynamically using a technique called "garbage collection." The Python interpreter automatically handles the allocation and deallocation of memory for objects in the program.
+When a Python program creates an object, such as a list or a string, the interpreter allocates memory to store the object. When the object is no longer needed, the interpreter marks it as eligible for garbage collection.
+
+The garbage collector then periodically runs in the background and frees up memory for objects that are no longer being used by the program. This process is transparent to the programmer and helps prevent memory leaks and other memory-related errors.
+
+Python also uses a technique called reference counting to manage memory. Every object in Python has a reference count, which is the number of references to the object in the program. When an object's reference count drops to zero, the garbage collector frees up the memory associated with the object.
+ 
+Python's memory management system is designed to be efficient and easy to use, allowing programmers to focus on writing code rather than worrying about memory management. However, it's important for programmers to be aware of memory usage in their programs, especially when working with large data sets or long-running processes
